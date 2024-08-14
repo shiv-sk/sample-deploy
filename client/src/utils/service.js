@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseurl = "http://localhost:4000/api/v1";
+const baseurl = "https://sample-deploy-api.vercel.app/api/v1";
 const Postreq = async (url , data)=>{
     try {
         const response = await axios({

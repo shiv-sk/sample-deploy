@@ -5,7 +5,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"));
-const allowedOrigins = ["http://localhost:5173"]
+const allowedOrigins = ["http://localhost:5173" , "https://sample-deploy-orpin.vercel.app"]
 //cors config
 const corsOption = {
     origin:(origin , callback)=>{
