@@ -15,7 +15,7 @@ export default function Login(){
             setIsLoading(true);
             const response = await Postreq(`${baseurl}/user/login` , loginData);
             console.log(response);
-            const {user} = response;
+            const {user} = response.data.data;
             console.log("user of the logedin user: ", user);
             localStorage.setItem("User" , user);
         } catch (error) {
